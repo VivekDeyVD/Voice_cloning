@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANUVAAD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+<!-- <form id="voiceForm" action="/process"></form> -->
+<div class="Container">
+    <h1>ANUVAAD</h1>
+<h2>  AI TRANSLATION</h2>
+    <!-- Language select karega Jis language ka Audio hai -->
+<div id="language" class="from-group">
+    <label for="inputLanguage">Select Input Language :</label>
+    <select name="inputLanguage" id="inputLanguage">
+       <option value="en">English</option>
+       <option value="hi">Hindi</option>
+       <option value="ban">Bengali</option>
+    </select>
+</div>
+  <!-- Audio file upload karega -->
+
+  <div  class="form-group">
+    <label for="audioFile">Upload Audio File :</label>
+    <input id="audioUpload" type="file" id="audioFile" name="audioFile" required>
+   
+   <!-- Convert karne ke baad wala text -->
+    <h3>
+        Translated Text :  <!--isko hata dena-->
+    </h3>
+</div>
+
+<!-- Language Translation -->
+<div class="form-group">
+    <label for="translateLanguage">Select Language :</label>
+    <select name="translateLanguage" id="translateLanguage">
+       <option value="en">English</option>
+       <option value="hi">Hindi</option>
+       <option value="ban">Bengali</option>
+    </select>
+    
+</div> <!--is div ko hata dena lekin the language to be translated must be equal to input language-->
+
+<div class="form-group">
+    <label for="outputLanguage">Output Language :</label>
+    <select name="outputLanguage" id="outputLanguage">
+       <option value="en">English</option>
+       <option value="hi">Hindi</option>
+       <option value="ban">Bengali</option>
+    </select>
+
+    <!-- translated text -->
+     <h3>Result :</h3>
+     <input type="text">
+    
+</div>
+
+<!-- JO result aaya usko audio me -->
+<div class="form-group">
+    <label for="outputAudio">output Audio :</label>
+    <select name="outputAudio" id="outputAudio">
+       <option value="en">English</option>
+       <option value="hi">Hindi</option>
+       <option value="ban">Bengali</option>
+    </select>
+    <br>
+    <br>  
+</div> <!--ye wala div ko bhi hata sakta hai lekin resultant text aur audio same language me hona h-->
+ <!-- download karo -->
+ <button id="downloadButton" class="download" onclick="downloadAudio()" >Download the Final Audio</button>
+
+</div>
+
+
+</body>
+</html>
