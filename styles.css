@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #52ddca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+.container{
+    background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   width: 300px;
+   text-align: center;
+  
+
+}
+h1{
+    font-style: italic;
+    font-size: 50px;
+}
+
+h1,h2{
+    margin-bottom: 20px;
+    text-decoration: wavy;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,input[type="file"]{
+    width: 35%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+button{
+    background-color: #007bff;
+    color: #09ff00;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+#language{
+    padding-left: 100px;
+}
+
+#audioUpload{
+    width: 200px;
+    border: none;
+}
